@@ -1,0 +1,701 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FE0137941FCD9A170033E0EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0137931FCD9A170033E0EC /* AppDelegate.m */; };
+		FE0137971FCD9A170033E0EC /* CLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0137961FCD9A170033E0EC /* CLViewController.m */; };
+		FE01379A1FCD9A170033E0EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE0137981FCD9A170033E0EC /* Main.storyboard */; };
+		FE01379C1FCD9A170033E0EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE01379B1FCD9A170033E0EC /* Assets.xcassets */; };
+		FE01379F1FCD9A170033E0EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE01379D1FCD9A170033E0EC /* LaunchScreen.storyboard */; };
+		FE0137A21FCD9A170033E0EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0137A11FCD9A170033E0EC /* main.m */; };
+		FE0137AC1FCD9A180033E0EC /* SectionBackgroundColorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0137AB1FCD9A180033E0EC /* SectionBackgroundColorTests.m */; };
+		FE0137B71FCD9A180033E0EC /* SectionBackgroundColorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0137B61FCD9A180033E0EC /* SectionBackgroundColorUITests.m */; };
+		FE0137C81FCDA67B0033E0EC /* CLSectionColorLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0137C71FCDA67B0033E0EC /* CLSectionColorLayoutAttributes.m */; };
+		FE0137CB1FCDAC370033E0EC /* CLCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0137CA1FCDAC370033E0EC /* CLCollectionViewFlowLayout.m */; };
+		FE9B68011FE554AE00E083C9 /* flickr_7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE9B67E91FE554A900E083C9 /* flickr_7.jpg */; };
+		FE9B68021FE554AE00E083C9 /* flickr_8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE9B67EA1FE554A900E083C9 /* flickr_8.jpg */; };
+		FE9B68031FE554AE00E083C9 /* flickr_20.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE9B67EB1FE554AA00E083C9 /* flickr_20.jpg */; };
+		FE9B68041FE554AE00E083C9 /* flickr_9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE9B67EC1FE554AA00E083C9 /* flickr_9.jpg */; };
+		FE9B68051FE554AE00E083C9 /* flickr_15.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE9B67ED1FE554AA00E083C9 /* flickr_15.jpg */; };
+		FE9B68061FE554AE00E083C9 /* flickr_17.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE9B67EE1FE554AA00E083C9 /* flickr_17.jpg */; };
+		FE9B68071FE554AE00E083C9 /* flickr_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE9B67EF1FE554AA00E083C9 /* flickr_3.jpg */; };
+		FE9B68081FE554AE00E083C9 /* flickr_22.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE9B67F01FE554AB00E083C9 /* flickr_22.jpg */; };
+		FE9B68091FE554AE00E083C9 /* flickr_23.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE9B67F11FE554AB00E083C9 /* flickr_23.jpg */; };
+		FE9B680A1FE554AE00E083C9 /* flickr_11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE9B67F21FE554AB00E083C9 /* flickr_11.jpg */; };
+		FE9B680B1FE554AE00E083C9 /* flickr_6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE9B67F31FE554AB00E083C9 /* flickr_6.jpg */; };
+		FE9B680C1FE554AE00E083C9 /* flickr_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE9B67F41FE554AC00E083C9 /* flickr_1.jpg */; };
+		FE9B680D1FE554AE00E083C9 /* flickr_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE9B67F51FE554AC00E083C9 /* flickr_4.jpg */; };
+		FE9B680E1FE554AE00E083C9 /* flickr_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE9B67F61FE554AC00E083C9 /* flickr_2.jpg */; };
+		FE9B680F1FE554AE00E083C9 /* flickr_16.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE9B67F71FE554AC00E083C9 /* flickr_16.jpg */; };
+		FE9B68101FE554AE00E083C9 /* flickr_18.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE9B67F81FE554AC00E083C9 /* flickr_18.jpg */; };
+		FE9B68111FE554AE00E083C9 /* flickr_10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE9B67F91FE554AC00E083C9 /* flickr_10.jpg */; };
+		FE9B68121FE554AE00E083C9 /* flickr_12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE9B67FA1FE554AD00E083C9 /* flickr_12.jpg */; };
+		FE9B68131FE554AE00E083C9 /* flickr_14.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE9B67FB1FE554AD00E083C9 /* flickr_14.jpg */; };
+		FE9B68141FE554AE00E083C9 /* flickr_21.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE9B67FC1FE554AD00E083C9 /* flickr_21.jpg */; };
+		FE9B68151FE554AE00E083C9 /* flickr_13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE9B67FD1FE554AD00E083C9 /* flickr_13.jpg */; };
+		FE9B68161FE554AE00E083C9 /* flickr_5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE9B67FE1FE554AD00E083C9 /* flickr_5.jpg */; };
+		FE9B68171FE554AE00E083C9 /* flickr_19.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE9B67FF1FE554AE00E083C9 /* flickr_19.jpg */; };
+		FE9B68181FE554AE00E083C9 /* flickr_24.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE9B68001FE554AE00E083C9 /* flickr_24.jpg */; };
+		FE9B681B1FE55D4100E083C9 /* CLCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9B681A1FE55D4100E083C9 /* CLCollectionViewCell.m */; };
+		FE9B681E1FE5604200E083C9 /* CLCollectionSectionBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9B681D1FE5604200E083C9 /* CLCollectionSectionBackgroundView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FE0137A81FCD9A180033E0EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE0137871FCD9A170033E0EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE01378E1FCD9A170033E0EC;
+			remoteInfo = SectionBackgroundColor;
+		};
+		FE0137B31FCD9A180033E0EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE0137871FCD9A170033E0EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE01378E1FCD9A170033E0EC;
+			remoteInfo = SectionBackgroundColor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FE01378F1FCD9A170033E0EC /* SectionBackgroundColor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SectionBackgroundColor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE0137921FCD9A170033E0EC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FE0137931FCD9A170033E0EC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FE0137951FCD9A170033E0EC /* CLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLViewController.h; sourceTree = "<group>"; };
+		FE0137961FCD9A170033E0EC /* CLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLViewController.m; sourceTree = "<group>"; };
+		FE0137991FCD9A170033E0EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FE01379B1FCD9A170033E0EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE01379E1FCD9A170033E0EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FE0137A01FCD9A170033E0EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE0137A11FCD9A170033E0EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FE0137A71FCD9A180033E0EC /* SectionBackgroundColorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SectionBackgroundColorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE0137AB1FCD9A180033E0EC /* SectionBackgroundColorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SectionBackgroundColorTests.m; sourceTree = "<group>"; };
+		FE0137AD1FCD9A180033E0EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE0137B21FCD9A180033E0EC /* SectionBackgroundColorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SectionBackgroundColorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE0137B61FCD9A180033E0EC /* SectionBackgroundColorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SectionBackgroundColorUITests.m; sourceTree = "<group>"; };
+		FE0137B81FCD9A180033E0EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE0137C61FCDA67B0033E0EC /* CLSectionColorLayoutAttributes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLSectionColorLayoutAttributes.h; sourceTree = "<group>"; };
+		FE0137C71FCDA67B0033E0EC /* CLSectionColorLayoutAttributes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLSectionColorLayoutAttributes.m; sourceTree = "<group>"; };
+		FE0137C91FCDAC370033E0EC /* CLCollectionViewFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		FE0137CA1FCDAC370033E0EC /* CLCollectionViewFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		FE9B67E91FE554A900E083C9 /* flickr_7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flickr_7.jpg; sourceTree = "<group>"; };
+		FE9B67EA1FE554A900E083C9 /* flickr_8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flickr_8.jpg; sourceTree = "<group>"; };
+		FE9B67EB1FE554AA00E083C9 /* flickr_20.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flickr_20.jpg; sourceTree = "<group>"; };
+		FE9B67EC1FE554AA00E083C9 /* flickr_9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flickr_9.jpg; sourceTree = "<group>"; };
+		FE9B67ED1FE554AA00E083C9 /* flickr_15.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flickr_15.jpg; sourceTree = "<group>"; };
+		FE9B67EE1FE554AA00E083C9 /* flickr_17.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flickr_17.jpg; sourceTree = "<group>"; };
+		FE9B67EF1FE554AA00E083C9 /* flickr_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flickr_3.jpg; sourceTree = "<group>"; };
+		FE9B67F01FE554AB00E083C9 /* flickr_22.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flickr_22.jpg; sourceTree = "<group>"; };
+		FE9B67F11FE554AB00E083C9 /* flickr_23.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flickr_23.jpg; sourceTree = "<group>"; };
+		FE9B67F21FE554AB00E083C9 /* flickr_11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flickr_11.jpg; sourceTree = "<group>"; };
+		FE9B67F31FE554AB00E083C9 /* flickr_6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flickr_6.jpg; sourceTree = "<group>"; };
+		FE9B67F41FE554AC00E083C9 /* flickr_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flickr_1.jpg; sourceTree = "<group>"; };
+		FE9B67F51FE554AC00E083C9 /* flickr_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flickr_4.jpg; sourceTree = "<group>"; };
+		FE9B67F61FE554AC00E083C9 /* flickr_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flickr_2.jpg; sourceTree = "<group>"; };
+		FE9B67F71FE554AC00E083C9 /* flickr_16.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flickr_16.jpg; sourceTree = "<group>"; };
+		FE9B67F81FE554AC00E083C9 /* flickr_18.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flickr_18.jpg; sourceTree = "<group>"; };
+		FE9B67F91FE554AC00E083C9 /* flickr_10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flickr_10.jpg; sourceTree = "<group>"; };
+		FE9B67FA1FE554AD00E083C9 /* flickr_12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flickr_12.jpg; sourceTree = "<group>"; };
+		FE9B67FB1FE554AD00E083C9 /* flickr_14.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flickr_14.jpg; sourceTree = "<group>"; };
+		FE9B67FC1FE554AD00E083C9 /* flickr_21.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flickr_21.jpg; sourceTree = "<group>"; };
+		FE9B67FD1FE554AD00E083C9 /* flickr_13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flickr_13.jpg; sourceTree = "<group>"; };
+		FE9B67FE1FE554AD00E083C9 /* flickr_5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flickr_5.jpg; sourceTree = "<group>"; };
+		FE9B67FF1FE554AE00E083C9 /* flickr_19.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flickr_19.jpg; sourceTree = "<group>"; };
+		FE9B68001FE554AE00E083C9 /* flickr_24.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flickr_24.jpg; sourceTree = "<group>"; };
+		FE9B68191FE55D4100E083C9 /* CLCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLCollectionViewCell.h; sourceTree = "<group>"; };
+		FE9B681A1FE55D4100E083C9 /* CLCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLCollectionViewCell.m; sourceTree = "<group>"; };
+		FE9B681C1FE5604200E083C9 /* CLCollectionSectionBackgroundView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLCollectionSectionBackgroundView.h; sourceTree = "<group>"; };
+		FE9B681D1FE5604200E083C9 /* CLCollectionSectionBackgroundView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLCollectionSectionBackgroundView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE01378C1FCD9A170033E0EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE0137A41FCD9A180033E0EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE0137AF1FCD9A180033E0EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE0137861FCD9A170033E0EC = {
+			isa = PBXGroup;
+			children = (
+				FE0137911FCD9A170033E0EC /* SectionBackgroundColor */,
+				FE0137AA1FCD9A180033E0EC /* SectionBackgroundColorTests */,
+				FE0137B51FCD9A180033E0EC /* SectionBackgroundColorUITests */,
+				FE0137901FCD9A170033E0EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FE0137901FCD9A170033E0EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE01378F1FCD9A170033E0EC /* SectionBackgroundColor.app */,
+				FE0137A71FCD9A180033E0EC /* SectionBackgroundColorTests.xctest */,
+				FE0137B21FCD9A180033E0EC /* SectionBackgroundColorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE0137911FCD9A170033E0EC /* SectionBackgroundColor */ = {
+			isa = PBXGroup;
+			children = (
+				FE9B67E81FE5548300E083C9 /* Images */,
+				FE0137C51FCDA6250033E0EC /* CollectionViewExtensions */,
+				FE0137C41FCD9B4F0033E0EC /* CollectionViewController */,
+				FE0137921FCD9A170033E0EC /* AppDelegate.h */,
+				FE0137931FCD9A170033E0EC /* AppDelegate.m */,
+				FE0137981FCD9A170033E0EC /* Main.storyboard */,
+				FE01379B1FCD9A170033E0EC /* Assets.xcassets */,
+				FE01379D1FCD9A170033E0EC /* LaunchScreen.storyboard */,
+				FE0137A01FCD9A170033E0EC /* Info.plist */,
+				FE0137A11FCD9A170033E0EC /* main.m */,
+			);
+			path = SectionBackgroundColor;
+			sourceTree = "<group>";
+		};
+		FE0137AA1FCD9A180033E0EC /* SectionBackgroundColorTests */ = {
+			isa = PBXGroup;
+			children = (
+				FE0137AB1FCD9A180033E0EC /* SectionBackgroundColorTests.m */,
+				FE0137AD1FCD9A180033E0EC /* Info.plist */,
+			);
+			path = SectionBackgroundColorTests;
+			sourceTree = "<group>";
+		};
+		FE0137B51FCD9A180033E0EC /* SectionBackgroundColorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FE0137B61FCD9A180033E0EC /* SectionBackgroundColorUITests.m */,
+				FE0137B81FCD9A180033E0EC /* Info.plist */,
+			);
+			path = SectionBackgroundColorUITests;
+			sourceTree = "<group>";
+		};
+		FE0137C41FCD9B4F0033E0EC /* CollectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FE0137951FCD9A170033E0EC /* CLViewController.h */,
+				FE0137961FCD9A170033E0EC /* CLViewController.m */,
+				FE9B68191FE55D4100E083C9 /* CLCollectionViewCell.h */,
+				FE9B681A1FE55D4100E083C9 /* CLCollectionViewCell.m */,
+				FE9B681C1FE5604200E083C9 /* CLCollectionSectionBackgroundView.h */,
+				FE9B681D1FE5604200E083C9 /* CLCollectionSectionBackgroundView.m */,
+			);
+			path = CollectionViewController;
+			sourceTree = "<group>";
+		};
+		FE0137C51FCDA6250033E0EC /* CollectionViewExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				FE0137C61FCDA67B0033E0EC /* CLSectionColorLayoutAttributes.h */,
+				FE0137C71FCDA67B0033E0EC /* CLSectionColorLayoutAttributes.m */,
+				FE0137C91FCDAC370033E0EC /* CLCollectionViewFlowLayout.h */,
+				FE0137CA1FCDAC370033E0EC /* CLCollectionViewFlowLayout.m */,
+			);
+			path = CollectionViewExtensions;
+			sourceTree = "<group>";
+		};
+		FE9B67E81FE5548300E083C9 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FE9B67F41FE554AC00E083C9 /* flickr_1.jpg */,
+				FE9B67F61FE554AC00E083C9 /* flickr_2.jpg */,
+				FE9B67EF1FE554AA00E083C9 /* flickr_3.jpg */,
+				FE9B67F51FE554AC00E083C9 /* flickr_4.jpg */,
+				FE9B67FE1FE554AD00E083C9 /* flickr_5.jpg */,
+				FE9B67F31FE554AB00E083C9 /* flickr_6.jpg */,
+				FE9B67E91FE554A900E083C9 /* flickr_7.jpg */,
+				FE9B67EA1FE554A900E083C9 /* flickr_8.jpg */,
+				FE9B67EC1FE554AA00E083C9 /* flickr_9.jpg */,
+				FE9B67F91FE554AC00E083C9 /* flickr_10.jpg */,
+				FE9B67F21FE554AB00E083C9 /* flickr_11.jpg */,
+				FE9B67FA1FE554AD00E083C9 /* flickr_12.jpg */,
+				FE9B67FD1FE554AD00E083C9 /* flickr_13.jpg */,
+				FE9B67FB1FE554AD00E083C9 /* flickr_14.jpg */,
+				FE9B67ED1FE554AA00E083C9 /* flickr_15.jpg */,
+				FE9B67F71FE554AC00E083C9 /* flickr_16.jpg */,
+				FE9B67EE1FE554AA00E083C9 /* flickr_17.jpg */,
+				FE9B67F81FE554AC00E083C9 /* flickr_18.jpg */,
+				FE9B67FF1FE554AE00E083C9 /* flickr_19.jpg */,
+				FE9B67EB1FE554AA00E083C9 /* flickr_20.jpg */,
+				FE9B67FC1FE554AD00E083C9 /* flickr_21.jpg */,
+				FE9B67F01FE554AB00E083C9 /* flickr_22.jpg */,
+				FE9B67F11FE554AB00E083C9 /* flickr_23.jpg */,
+				FE9B68001FE554AE00E083C9 /* flickr_24.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE01378E1FCD9A170033E0EC /* SectionBackgroundColor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE0137BB1FCD9A180033E0EC /* Build configuration list for PBXNativeTarget "SectionBackgroundColor" */;
+			buildPhases = (
+				FE01378B1FCD9A170033E0EC /* Sources */,
+				FE01378C1FCD9A170033E0EC /* Frameworks */,
+				FE01378D1FCD9A170033E0EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SectionBackgroundColor;
+			productName = SectionBackgroundColor;
+			productReference = FE01378F1FCD9A170033E0EC /* SectionBackgroundColor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FE0137A61FCD9A180033E0EC /* SectionBackgroundColorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE0137BE1FCD9A180033E0EC /* Build configuration list for PBXNativeTarget "SectionBackgroundColorTests" */;
+			buildPhases = (
+				FE0137A31FCD9A180033E0EC /* Sources */,
+				FE0137A41FCD9A180033E0EC /* Frameworks */,
+				FE0137A51FCD9A180033E0EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE0137A91FCD9A180033E0EC /* PBXTargetDependency */,
+			);
+			name = SectionBackgroundColorTests;
+			productName = SectionBackgroundColorTests;
+			productReference = FE0137A71FCD9A180033E0EC /* SectionBackgroundColorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FE0137B11FCD9A180033E0EC /* SectionBackgroundColorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE0137C11FCD9A180033E0EC /* Build configuration list for PBXNativeTarget "SectionBackgroundColorUITests" */;
+			buildPhases = (
+				FE0137AE1FCD9A180033E0EC /* Sources */,
+				FE0137AF1FCD9A180033E0EC /* Frameworks */,
+				FE0137B01FCD9A180033E0EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE0137B41FCD9A180033E0EC /* PBXTargetDependency */,
+			);
+			name = SectionBackgroundColorUITests;
+			productName = SectionBackgroundColorUITests;
+			productReference = FE0137B21FCD9A180033E0EC /* SectionBackgroundColorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE0137871FCD9A170033E0EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = CaryaLiu;
+				TargetAttributes = {
+					FE01378E1FCD9A170033E0EC = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					FE0137A61FCD9A180033E0EC = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FE01378E1FCD9A170033E0EC;
+					};
+					FE0137B11FCD9A180033E0EC = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FE01378E1FCD9A170033E0EC;
+					};
+				};
+			};
+			buildConfigurationList = FE01378A1FCD9A170033E0EC /* Build configuration list for PBXProject "SectionBackgroundColor" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE0137861FCD9A170033E0EC;
+			productRefGroup = FE0137901FCD9A170033E0EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE01378E1FCD9A170033E0EC /* SectionBackgroundColor */,
+				FE0137A61FCD9A180033E0EC /* SectionBackgroundColorTests */,
+				FE0137B11FCD9A180033E0EC /* SectionBackgroundColorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE01378D1FCD9A170033E0EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE9B68101FE554AE00E083C9 /* flickr_18.jpg in Resources */,
+				FE9B68181FE554AE00E083C9 /* flickr_24.jpg in Resources */,
+				FE9B68011FE554AE00E083C9 /* flickr_7.jpg in Resources */,
+				FE9B680C1FE554AE00E083C9 /* flickr_1.jpg in Resources */,
+				FE9B68111FE554AE00E083C9 /* flickr_10.jpg in Resources */,
+				FE9B68061FE554AE00E083C9 /* flickr_17.jpg in Resources */,
+				FE9B68021FE554AE00E083C9 /* flickr_8.jpg in Resources */,
+				FE9B68161FE554AE00E083C9 /* flickr_5.jpg in Resources */,
+				FE9B68041FE554AE00E083C9 /* flickr_9.jpg in Resources */,
+				FE9B680A1FE554AE00E083C9 /* flickr_11.jpg in Resources */,
+				FE9B68081FE554AE00E083C9 /* flickr_22.jpg in Resources */,
+				FE9B680F1FE554AE00E083C9 /* flickr_16.jpg in Resources */,
+				FE9B68151FE554AE00E083C9 /* flickr_13.jpg in Resources */,
+				FE01379F1FCD9A170033E0EC /* LaunchScreen.storyboard in Resources */,
+				FE9B680B1FE554AE00E083C9 /* flickr_6.jpg in Resources */,
+				FE9B680D1FE554AE00E083C9 /* flickr_4.jpg in Resources */,
+				FE9B68141FE554AE00E083C9 /* flickr_21.jpg in Resources */,
+				FE9B68051FE554AE00E083C9 /* flickr_15.jpg in Resources */,
+				FE9B68091FE554AE00E083C9 /* flickr_23.jpg in Resources */,
+				FE9B680E1FE554AE00E083C9 /* flickr_2.jpg in Resources */,
+				FE9B68121FE554AE00E083C9 /* flickr_12.jpg in Resources */,
+				FE9B68131FE554AE00E083C9 /* flickr_14.jpg in Resources */,
+				FE9B68071FE554AE00E083C9 /* flickr_3.jpg in Resources */,
+				FE01379C1FCD9A170033E0EC /* Assets.xcassets in Resources */,
+				FE9B68031FE554AE00E083C9 /* flickr_20.jpg in Resources */,
+				FE9B68171FE554AE00E083C9 /* flickr_19.jpg in Resources */,
+				FE01379A1FCD9A170033E0EC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE0137A51FCD9A180033E0EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE0137B01FCD9A180033E0EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE01378B1FCD9A170033E0EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE0137971FCD9A170033E0EC /* CLViewController.m in Sources */,
+				FE0137A21FCD9A170033E0EC /* main.m in Sources */,
+				FE0137C81FCDA67B0033E0EC /* CLSectionColorLayoutAttributes.m in Sources */,
+				FE0137CB1FCDAC370033E0EC /* CLCollectionViewFlowLayout.m in Sources */,
+				FE0137941FCD9A170033E0EC /* AppDelegate.m in Sources */,
+				FE9B681E1FE5604200E083C9 /* CLCollectionSectionBackgroundView.m in Sources */,
+				FE9B681B1FE55D4100E083C9 /* CLCollectionViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE0137A31FCD9A180033E0EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE0137AC1FCD9A180033E0EC /* SectionBackgroundColorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE0137AE1FCD9A180033E0EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE0137B71FCD9A180033E0EC /* SectionBackgroundColorUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FE0137A91FCD9A180033E0EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE01378E1FCD9A170033E0EC /* SectionBackgroundColor */;
+			targetProxy = FE0137A81FCD9A180033E0EC /* PBXContainerItemProxy */;
+		};
+		FE0137B41FCD9A180033E0EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE01378E1FCD9A170033E0EC /* SectionBackgroundColor */;
+			targetProxy = FE0137B31FCD9A180033E0EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FE0137981FCD9A170033E0EC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE0137991FCD9A170033E0EC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FE01379D1FCD9A170033E0EC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE01379E1FCD9A170033E0EC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE0137B91FCD9A180033E0EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FE0137BA1FCD9A180033E0EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE0137BC1FCD9A180033E0EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V5HBWRS4M3;
+				INFOPLIST_FILE = SectionBackgroundColor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liumh.SectionBackgroundColor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FE0137BD1FCD9A180033E0EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V5HBWRS4M3;
+				INFOPLIST_FILE = SectionBackgroundColor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liumh.SectionBackgroundColor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FE0137BF1FCD9A180033E0EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V5HBWRS4M3;
+				INFOPLIST_FILE = SectionBackgroundColorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liumh.SectionBackgroundColorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SectionBackgroundColor.app/SectionBackgroundColor";
+			};
+			name = Debug;
+		};
+		FE0137C01FCD9A180033E0EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V5HBWRS4M3;
+				INFOPLIST_FILE = SectionBackgroundColorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liumh.SectionBackgroundColorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SectionBackgroundColor.app/SectionBackgroundColor";
+			};
+			name = Release;
+		};
+		FE0137C21FCD9A180033E0EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V5HBWRS4M3;
+				INFOPLIST_FILE = SectionBackgroundColorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liumh.SectionBackgroundColorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SectionBackgroundColor;
+			};
+			name = Debug;
+		};
+		FE0137C31FCD9A180033E0EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V5HBWRS4M3;
+				INFOPLIST_FILE = SectionBackgroundColorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liumh.SectionBackgroundColorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SectionBackgroundColor;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE01378A1FCD9A170033E0EC /* Build configuration list for PBXProject "SectionBackgroundColor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE0137B91FCD9A180033E0EC /* Debug */,
+				FE0137BA1FCD9A180033E0EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE0137BB1FCD9A180033E0EC /* Build configuration list for PBXNativeTarget "SectionBackgroundColor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE0137BC1FCD9A180033E0EC /* Debug */,
+				FE0137BD1FCD9A180033E0EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE0137BE1FCD9A180033E0EC /* Build configuration list for PBXNativeTarget "SectionBackgroundColorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE0137BF1FCD9A180033E0EC /* Debug */,
+				FE0137C01FCD9A180033E0EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE0137C11FCD9A180033E0EC /* Build configuration list for PBXNativeTarget "SectionBackgroundColorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE0137C21FCD9A180033E0EC /* Debug */,
+				FE0137C31FCD9A180033E0EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE0137871FCD9A170033E0EC /* Project object */;
+}
