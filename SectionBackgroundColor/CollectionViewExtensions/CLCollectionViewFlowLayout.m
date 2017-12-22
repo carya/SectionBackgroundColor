@@ -10,7 +10,6 @@
 #import "CLSectionColorLayoutAttributes.h"
 #import "CLCollectionSectionBackgroundView.h"
 
-static const CGFloat kItemDemension = 140;
 static NSString *const kDecorationViewKind = @"CLCollectionSectionBackgroundView";
 
 @interface CLCollectionViewFlowLayout ()
@@ -24,11 +23,6 @@ static NSString *const kDecorationViewKind = @"CLCollectionSectionBackgroundView
 - (instancetype)init {
     self = [super init];
     if (self) {
-        self.itemSize = CGSizeMake(kItemDemension, kItemDemension);
-        self.sectionInset = UIEdgeInsetsMake(13.0f, 13.0f, 13.0f, 13.0f);
-        self.minimumLineSpacing = 15.0f;
-        self.minimumInteritemSpacing = 15.0f;
-        
         [self registerClass:[CLCollectionSectionBackgroundView class] forDecorationViewOfKind:kDecorationViewKind];
     }
     return self;

@@ -17,6 +17,7 @@
 		FE0137B71FCD9A180033E0EC /* SectionBackgroundColorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0137B61FCD9A180033E0EC /* SectionBackgroundColorUITests.m */; };
 		FE0137C81FCDA67B0033E0EC /* CLSectionColorLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0137C71FCDA67B0033E0EC /* CLSectionColorLayoutAttributes.m */; };
 		FE0137CB1FCDAC370033E0EC /* CLCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0137CA1FCDAC370033E0EC /* CLCollectionViewFlowLayout.m */; };
+		FE9726D61FED56EC008F64FC /* CLCustomFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9726D51FED56EC008F64FC /* CLCustomFlowLayout.m */; };
 		FE9B68011FE554AE00E083C9 /* flickr_7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE9B67E91FE554A900E083C9 /* flickr_7.jpg */; };
 		FE9B68021FE554AE00E083C9 /* flickr_8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE9B67EA1FE554A900E083C9 /* flickr_8.jpg */; };
 		FE9B68031FE554AE00E083C9 /* flickr_20.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE9B67EB1FE554AA00E083C9 /* flickr_20.jpg */; };
@@ -83,6 +84,8 @@
 		FE0137C71FCDA67B0033E0EC /* CLSectionColorLayoutAttributes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLSectionColorLayoutAttributes.m; sourceTree = "<group>"; };
 		FE0137C91FCDAC370033E0EC /* CLCollectionViewFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLCollectionViewFlowLayout.h; sourceTree = "<group>"; };
 		FE0137CA1FCDAC370033E0EC /* CLCollectionViewFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		FE9726D41FED56EC008F64FC /* CLCustomFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLCustomFlowLayout.h; sourceTree = "<group>"; };
+		FE9726D51FED56EC008F64FC /* CLCustomFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLCustomFlowLayout.m; sourceTree = "<group>"; };
 		FE9B67E91FE554A900E083C9 /* flickr_7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flickr_7.jpg; sourceTree = "<group>"; };
 		FE9B67EA1FE554A900E083C9 /* flickr_8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flickr_8.jpg; sourceTree = "<group>"; };
 		FE9B67EB1FE554AA00E083C9 /* flickr_20.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flickr_20.jpg; sourceTree = "<group>"; };
@@ -198,10 +201,10 @@
 			children = (
 				FE0137951FCD9A170033E0EC /* CLViewController.h */,
 				FE0137961FCD9A170033E0EC /* CLViewController.m */,
+				FE9726D41FED56EC008F64FC /* CLCustomFlowLayout.h */,
+				FE9726D51FED56EC008F64FC /* CLCustomFlowLayout.m */,
 				FE9B68191FE55D4100E083C9 /* CLCollectionViewCell.h */,
 				FE9B681A1FE55D4100E083C9 /* CLCollectionViewCell.m */,
-				FE9B681C1FE5604200E083C9 /* CLCollectionSectionBackgroundView.h */,
-				FE9B681D1FE5604200E083C9 /* CLCollectionSectionBackgroundView.m */,
 			);
 			path = CollectionViewController;
 			sourceTree = "<group>";
@@ -213,6 +216,8 @@
 				FE0137C71FCDA67B0033E0EC /* CLSectionColorLayoutAttributes.m */,
 				FE0137C91FCDAC370033E0EC /* CLCollectionViewFlowLayout.h */,
 				FE0137CA1FCDAC370033E0EC /* CLCollectionViewFlowLayout.m */,
+				FE9B681C1FE5604200E083C9 /* CLCollectionSectionBackgroundView.h */,
+				FE9B681D1FE5604200E083C9 /* CLCollectionSectionBackgroundView.m */,
 			);
 			path = CollectionViewExtensions;
 			sourceTree = "<group>";
@@ -412,6 +417,7 @@
 				FE0137941FCD9A170033E0EC /* AppDelegate.m in Sources */,
 				FE9B681E1FE5604200E083C9 /* CLCollectionSectionBackgroundView.m in Sources */,
 				FE9B681B1FE55D4100E083C9 /* CLCollectionViewCell.m in Sources */,
+				FE9726D61FED56EC008F64FC /* CLCustomFlowLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

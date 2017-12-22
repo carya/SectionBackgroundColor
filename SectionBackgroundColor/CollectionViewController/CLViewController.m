@@ -8,7 +8,7 @@
 
 #import "CLViewController.h"
 #import "CLCollectionViewCell.h"
-#import "CLCollectionViewFlowLayout.h"
+#import "CLCustomFlowLayout.h"
 
 static NSString *const kImageCellIdentifier = @"CLCollectionViewCell";
 @interface CLViewController () <UICollectionViewDelegateFlowLayout>
@@ -24,7 +24,7 @@ static NSString *const kImageCellIdentifier = @"CLCollectionViewCell";
     
     [self setupModel];
     
-    CLCollectionViewFlowLayout *flowLayout = [[CLCollectionViewFlowLayout alloc] init];
+    CLCustomFlowLayout *flowLayout = [[CLCustomFlowLayout alloc] init];
     flowLayout.sectionColor = [UIColor greenColor];
     self.collectionView.collectionViewLayout = flowLayout;
 }
