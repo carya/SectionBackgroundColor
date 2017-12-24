@@ -8,6 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+@class CLCollectionHeaderView;
+@protocol CLCollectionHeaderViewDelegate <NSObject>
+
+- (void)headerViewDidTouched:(CLCollectionHeaderView *)headerView;
+
+@end
+
 @interface CLCollectionHeaderView : UICollectionReusableView
+
+@property (nonatomic, weak) id<CLCollectionHeaderViewDelegate> delegate;
+
+- (void)configWithCategory:(NSString *)category;
 
 @end

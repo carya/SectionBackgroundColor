@@ -8,6 +8,20 @@
 
 #import "CLCollectionHeaderView.h"
 
+@interface CLCollectionHeaderView ()
+
+@property (weak, nonatomic) IBOutlet UILabel *categoryLabel;
+
+@end
+
 @implementation CLCollectionHeaderView
+
+- (void)configWithCategory:(NSString *)category {
+    self.categoryLabel.text = category;
+}
+
+- (IBAction)headerViewDidTouched:(id)sender {
+    [self.delegate headerViewDidTouched:self];
+}
 
 @end

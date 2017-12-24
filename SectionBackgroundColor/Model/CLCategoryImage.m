@@ -8,6 +8,24 @@
 
 #import "CLCategoryImage.h"
 
+@interface CLCategoryImage ()
+
+@property (nonatomic, strong) NSArray<UIImage *> *images;
+@property (nonatomic, copy) NSString *category;
+
+@end
+
 @implementation CLCategoryImage
+
+- (instancetype)initWithImages:(NSArray<UIImage *> *)images category:(NSString *)category {
+    self = [super init];
+    if (self) {
+        self.images = images;
+        self.category = category;
+        self.hasFolded = NO;
+    }
+    
+    return self;
+}
 
 @end

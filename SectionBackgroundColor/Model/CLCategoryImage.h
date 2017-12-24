@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface CLCategoryImage : NSObject
+
+@property (nonatomic, strong, readonly) NSArray<UIImage *> *images;
+@property (nonatomic, copy, readonly) NSString *category;
+@property (nonatomic, assign) BOOL hasFolded;
+
+- (instancetype)initWithImages:(NSArray<UIImage *> *)images category:(NSString *)category;
 
 @end
