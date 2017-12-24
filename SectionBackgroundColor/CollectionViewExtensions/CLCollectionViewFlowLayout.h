@@ -13,8 +13,14 @@
 @optional
 
 - (UIColor *)collectionView:(UICollectionView *)collectionView
-                     layout:(UICollectionViewLayout*)collectionViewLayout
+                     layout:(UICollectionViewLayout *)collectionViewLayout
      colorForSectionAtIndex:(NSInteger)section;
+
+@end
+
+@protocol CLCollectionViewFlowLayoutUpdateHooks <NSObject>
+
+- (void)configInitialLayoutAttributesForAppearingDecoration:(UICollectionViewLayoutAttributes *)layoutAttributes;
 
 @end
 

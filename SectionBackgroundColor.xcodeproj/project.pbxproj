@@ -18,6 +18,8 @@
 		FE0137C81FCDA67B0033E0EC /* CLSectionColorLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0137C71FCDA67B0033E0EC /* CLSectionColorLayoutAttributes.m */; };
 		FE0137CB1FCDAC370033E0EC /* CLCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0137CA1FCDAC370033E0EC /* CLCollectionViewFlowLayout.m */; };
 		FE9726D61FED56EC008F64FC /* CLCustomFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9726D51FED56EC008F64FC /* CLCustomFlowLayout.m */; };
+		FE9726DA1FEDEF89008F64FC /* CLCategoryImage.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9726D91FEDEF89008F64FC /* CLCategoryImage.m */; };
+		FE9726DD1FEE54D5008F64FC /* CLCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9726DC1FEE54D5008F64FC /* CLCollectionHeaderView.m */; };
 		FE9B68011FE554AE00E083C9 /* flickr_7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE9B67E91FE554A900E083C9 /* flickr_7.jpg */; };
 		FE9B68021FE554AE00E083C9 /* flickr_8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE9B67EA1FE554A900E083C9 /* flickr_8.jpg */; };
 		FE9B68031FE554AE00E083C9 /* flickr_20.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE9B67EB1FE554AA00E083C9 /* flickr_20.jpg */; };
@@ -86,6 +88,10 @@
 		FE0137CA1FCDAC370033E0EC /* CLCollectionViewFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 		FE9726D41FED56EC008F64FC /* CLCustomFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLCustomFlowLayout.h; sourceTree = "<group>"; };
 		FE9726D51FED56EC008F64FC /* CLCustomFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLCustomFlowLayout.m; sourceTree = "<group>"; };
+		FE9726D81FEDEF89008F64FC /* CLCategoryImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLCategoryImage.h; sourceTree = "<group>"; };
+		FE9726D91FEDEF89008F64FC /* CLCategoryImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLCategoryImage.m; sourceTree = "<group>"; };
+		FE9726DB1FEE54D5008F64FC /* CLCollectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLCollectionHeaderView.h; sourceTree = "<group>"; };
+		FE9726DC1FEE54D5008F64FC /* CLCollectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLCollectionHeaderView.m; sourceTree = "<group>"; };
 		FE9B67E91FE554A900E083C9 /* flickr_7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flickr_7.jpg; sourceTree = "<group>"; };
 		FE9B67EA1FE554A900E083C9 /* flickr_8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flickr_8.jpg; sourceTree = "<group>"; };
 		FE9B67EB1FE554AA00E083C9 /* flickr_20.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flickr_20.jpg; sourceTree = "<group>"; };
@@ -164,6 +170,7 @@
 		FE0137911FCD9A170033E0EC /* SectionBackgroundColor */ = {
 			isa = PBXGroup;
 			children = (
+				FE9726D71FEDEF2E008F64FC /* Model */,
 				FE9B67E81FE5548300E083C9 /* Images */,
 				FE0137C51FCDA6250033E0EC /* CollectionViewExtensions */,
 				FE0137C41FCD9B4F0033E0EC /* CollectionViewController */,
@@ -205,6 +212,8 @@
 				FE9726D51FED56EC008F64FC /* CLCustomFlowLayout.m */,
 				FE9B68191FE55D4100E083C9 /* CLCollectionViewCell.h */,
 				FE9B681A1FE55D4100E083C9 /* CLCollectionViewCell.m */,
+				FE9726DB1FEE54D5008F64FC /* CLCollectionHeaderView.h */,
+				FE9726DC1FEE54D5008F64FC /* CLCollectionHeaderView.m */,
 			);
 			path = CollectionViewController;
 			sourceTree = "<group>";
@@ -220,6 +229,15 @@
 				FE9B681D1FE5604200E083C9 /* CLCollectionSectionBackgroundView.m */,
 			);
 			path = CollectionViewExtensions;
+			sourceTree = "<group>";
+		};
+		FE9726D71FEDEF2E008F64FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FE9726D81FEDEF89008F64FC /* CLCategoryImage.h */,
+				FE9726D91FEDEF89008F64FC /* CLCategoryImage.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		FE9B67E81FE5548300E083C9 /* Images */ = {
@@ -412,7 +430,9 @@
 			files = (
 				FE0137971FCD9A170033E0EC /* CLViewController.m in Sources */,
 				FE0137A21FCD9A170033E0EC /* main.m in Sources */,
+				FE9726DA1FEDEF89008F64FC /* CLCategoryImage.m in Sources */,
 				FE0137C81FCDA67B0033E0EC /* CLSectionColorLayoutAttributes.m in Sources */,
+				FE9726DD1FEE54D5008F64FC /* CLCollectionHeaderView.m in Sources */,
 				FE0137CB1FCDAC370033E0EC /* CLCollectionViewFlowLayout.m in Sources */,
 				FE0137941FCD9A170033E0EC /* AppDelegate.m in Sources */,
 				FE9B681E1FE5604200E083C9 /* CLCollectionSectionBackgroundView.m in Sources */,
