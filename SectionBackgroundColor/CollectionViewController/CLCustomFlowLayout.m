@@ -10,6 +10,10 @@
 
 static const CGFloat kItemDemension = 140;
 
+@interface CLCustomFlowLayout () <CLCollectionViewFlowLayoutUpdateHooks>
+
+@end
+
 @implementation CLCustomFlowLayout
 
 - (instancetype)init {
@@ -23,6 +27,12 @@ static const CGFloat kItemDemension = 140;
     }
     
     return self;
+}
+
+- (void)configInitialLayoutAttributesForAppearingDecoration:(UICollectionViewLayoutAttributes *)layoutAttributes {
+    
+    layoutAttributes.alpha = 0.5;
+    layoutAttributes.transform3D = CATransform3DMakeTranslation(-CGRectGetWidth(layoutAttributes.frame), 0, 0);
 }
 
 @end

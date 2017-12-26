@@ -83,11 +83,7 @@ static NSString *const kCollectionHeaderViewIdentifier = @"CLCollectionHeaderVie
     if (hasFolded) {
         return UIEdgeInsetsZero;
     }
-    if (section % 2 == 0) {
-        return UIEdgeInsetsMake(30, 50, 30, 50);
-    } else {
-        return UIEdgeInsetsMake(0, 50, 0, 50);
-    }
+    return UIEdgeInsetsMake(30, 50, 30, 50);
 }
 
 - (UIColor *)collectionView:(UICollectionView *)collectionView

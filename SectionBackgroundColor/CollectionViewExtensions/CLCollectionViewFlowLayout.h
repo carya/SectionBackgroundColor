@@ -20,7 +20,9 @@
 
 @protocol CLCollectionViewFlowLayoutUpdateHooks <NSObject>
 
+@optional
 - (void)configInitialLayoutAttributesForAppearingDecoration:(UICollectionViewLayoutAttributes *)layoutAttributes;
+- (void)configFinalLayoutAttributesForDisappearingDecoration:(UICollectionViewLayoutAttributes *)layoutAttributes;
 
 @end
 

@@ -64,6 +64,7 @@ static NSString *const kDecorationViewKind = @"CLCollectionSectionBackgroundView
     if (![elementKind isEqualToString:kDecorationViewKind]) {
         return [super layoutAttributesForDecorationViewOfKind:elementKind atIndexPath:indexPath];
     }
+    
     NSInteger section = indexPath.section;
     NSIndexPath *sectionIndexPath = [NSIndexPath indexPathWithIndex:section];
     CLSectionColorLayoutAttributes *decorationViewAttributes = [CLSectionColorLayoutAttributes layoutAttributesForDecorationViewOfKind:kDecorationViewKind withIndexPath:sectionIndexPath];
@@ -97,24 +98,24 @@ static NSString *const kDecorationViewKind = @"CLCollectionSectionBackgroundView
 
 /** The collection view calls the following two method between its calls to prepareForCollectionViewUpdates: and finalizeCollectionViewUpdates. */
 - (NSArray<NSIndexPath *> *)indexPathsToInsertForDecorationViewOfKind:(NSString *)elementKind {
-    NSMutableArray<NSIndexPath *> *temp = @[].mutableCopy;
+    NSMutableArray<NSIndexPath *> *indexPathsToInsert = @[].mutableCopy;
     [self.insertSectionSet enumerateObjectsUsingBlock:^(NSNumber  * _Nonnull section, BOOL * _Nonnull stop) {
         NSIndexPath *sectionIndexPath = [NSIndexPath indexPathWithIndex:section.integerValue];
-        [temp addObject:sectionIndexPath];
+        [indexPathsToInsert addObject:sectionIndexPath];
     }];
     
-    return temp;
+    return indexPathsToInsert;
 }
 
 - (NSArray<NSIndexPath *> *)indexPathsToDeleteForDecorationViewOfKind:(NSString *)elementKind {
     
-    NSMutableArray<NSIndexPath *> *temp = @[].mutableCopy;
+    NSMutableArray<NSIndexPath *> *indexPathsToDelete = @[].mutableCopy;
     [self.deleteSectionSet enumerateObjectsUsingBlock:^(NSNumber  * _Nonnull section, BOOL * _Nonnull stop) {
         NSIndexPath *sectionIndexPath = [NSIndexPath indexPathWithIndex:section.integerValue];
-        [temp addObject:sectionIndexPath];
+        [indexPathsToDelete addObject:sectionIndexPath];
     }];
     
-    return temp;
+    return indexPathsToDelete;
 }
 
 - (UICollectionViewLayoutAttributes *)initialLayoutAttributesForAppearingDecorationElementOfKind:(NSString *)elementKind atIndexPath:(NSIndexPath *)decorationIndexPath {
@@ -122,16 +123,31 @@ static NSString *const kDecorationViewKind = @"CLCollectionSectionBackgroundView
     if ([elementKind isEqualToString:kDecorationViewKind]) {
         if ([self.insertSectionSet containsObject:@(decorationIndexPath.section)]) {
             layoutAttributes = [self layoutAttributesForDecorationViewOfKind:kDecorationViewKind atIndexPath:decorationIndexPath];
-            if (self.child) {
-                
+            if (self.child && [self.child respondsToSelector:@selector(configInitialLayoutAttributesForAppearingDecoration:)]) {
+                [self.child configInitialLayoutAttributesForAppearingDecoration:layoutAttributes];
             } else {
                 layoutAttributes.alpha = 0;
-                layoutAttributes.transform3D = CATransform3DMakeTranslation(-CGRectGetWidth(layoutAttributes.frame), 0, 0);
             }
         }
     }
     return layoutAttributes;
 }
+
+//- (nullable UICollectionViewLayoutAttributes *)finalLayoutAttributesForDisappearingDecorationElementOfKind:(NSString *)elementKind atIndexPath:(NSIndexPath *)decorationIndexPath {
+//    UICollectionViewLayoutAttributes *layoutAttributes;
+//    if ([elementKind isEqualToString:kDecorationViewKind]) {
+//        if ([self.deleteSectionSet containsObject:@(decorationIndexPath.section)]) {
+//            layoutAttributes = [self layoutAttributesForDecorationViewOfKind:kDecorationViewKind atIndexPath:decorationIndexPath];
+//            if (self.child && [self.child respondsToSelector:@selector(configFinalLayoutAttributesForDisappearingDecoration:)]) {
+//                [self.child configFinalLayoutAttributesForDisappearingDecoration:layoutAttributes];
+//            } else {
+//                layoutAttributes.alpha = 0;
+//                layoutAttributes.transform3D = CATransform3DMakeTranslation(0, -CGRectGetHeight(layoutAttributes.frame), 0);
+//            }
+//        }
+//    }
+//    return layoutAttributes;
+//}
 
 - (void)prepareForCollectionViewUpdates:(NSArray<UICollectionViewUpdateItem *> *)updateItems {
     [super prepareForCollectionViewUpdates:updateItems];
