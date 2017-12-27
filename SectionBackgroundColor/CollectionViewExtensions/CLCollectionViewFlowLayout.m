@@ -133,21 +133,21 @@ static NSString *const kDecorationViewKind = @"CLCollectionSectionBackgroundView
     return layoutAttributes;
 }
 
-//- (nullable UICollectionViewLayoutAttributes *)finalLayoutAttributesForDisappearingDecorationElementOfKind:(NSString *)elementKind atIndexPath:(NSIndexPath *)decorationIndexPath {
-//    UICollectionViewLayoutAttributes *layoutAttributes;
-//    if ([elementKind isEqualToString:kDecorationViewKind]) {
-//        if ([self.deleteSectionSet containsObject:@(decorationIndexPath.section)]) {
-//            layoutAttributes = [self layoutAttributesForDecorationViewOfKind:kDecorationViewKind atIndexPath:decorationIndexPath];
-//            if (self.child && [self.child respondsToSelector:@selector(configFinalLayoutAttributesForDisappearingDecoration:)]) {
-//                [self.child configFinalLayoutAttributesForDisappearingDecoration:layoutAttributes];
-//            } else {
+- (nullable UICollectionViewLayoutAttributes *)finalLayoutAttributesForDisappearingDecorationElementOfKind:(NSString *)elementKind atIndexPath:(NSIndexPath *)decorationIndexPath {
+    UICollectionViewLayoutAttributes *layoutAttributes;
+    if ([elementKind isEqualToString:kDecorationViewKind]) {
+        if ([self.deleteSectionSet containsObject:@(decorationIndexPath.section)]) {
+            layoutAttributes = [self layoutAttributesForDecorationViewOfKind:kDecorationViewKind atIndexPath:decorationIndexPath];
+            if (self.child && [self.child respondsToSelector:@selector(configFinalLayoutAttributesForDisappearingDecoration:)]) {
+                [self.child configFinalLayoutAttributesForDisappearingDecoration:layoutAttributes];
+            } else {
 //                layoutAttributes.alpha = 0;
 //                layoutAttributes.transform3D = CATransform3DMakeTranslation(0, -CGRectGetHeight(layoutAttributes.frame), 0);
-//            }
-//        }
-//    }
-//    return layoutAttributes;
-//}
+            }
+        }
+    }
+    return layoutAttributes;
+}
 
 - (void)prepareForCollectionViewUpdates:(NSArray<UICollectionViewUpdateItem *> *)updateItems {
     [super prepareForCollectionViewUpdates:updateItems];

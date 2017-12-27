@@ -28,6 +28,7 @@ static NSString *const kCollectionHeaderViewIdentifier = @"CLCollectionHeaderVie
     
     [self setupModel];
     
+    [self.collectionView registerNib:[UINib nibWithNibName:@"CLCollectionHeaderView" bundle:nil] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:kCollectionHeaderViewIdentifier];
     CLCustomFlowLayout *flowLayout = [[CLCustomFlowLayout alloc] init];
     flowLayout.sectionColor = [UIColor greenColor];
     self.collectionView.collectionViewLayout = flowLayout;

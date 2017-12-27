@@ -32,7 +32,7 @@ static const CGFloat kItemDemension = 140;
 - (void)configInitialLayoutAttributesForAppearingDecoration:(UICollectionViewLayoutAttributes *)layoutAttributes {
     
     layoutAttributes.alpha = 0.5;
-    layoutAttributes.transform3D = CATransform3DMakeTranslation(-CGRectGetWidth(layoutAttributes.frame), 0, 0);
+//    layoutAttributes.transform3D = CATransform3DMakeTranslation(-CGRectGetWidth(layoutAttributes.frame), 0, 0);
 }
 
 @end

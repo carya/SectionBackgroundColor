@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,13 +20,13 @@
                         <gestureRecognizers/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ub6-0l-5sy">
                             <size key="itemSize" width="50" height="50"/>
-                            <size key="headerReferenceSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CLCollectionViewCell" id="mVW-zA-CzP" customClass="CLCollectionViewCell">
-                                <rect key="frame" x="0.0" y="50" width="50" height="50"/>
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -49,38 +48,6 @@
                                 </connections>
                             </collectionViewCell>
                         </cells>
-                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="CLCollectionHeaderView" id="Zvo-YH-8Mz" customClass="CLCollectionHeaderView">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
-                            <autoresizingMask key="autoresizingMask"/>
-                            <subviews>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IdO-ra-yh8" customClass="UIControl">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <connections>
-                                        <action selector="headerViewDidTouched:" destination="Zvo-YH-8Mz" eventType="touchUpInside" id="TUE-9x-4ra"/>
-                                    </connections>
-                                </view>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UHS-BR-A0g">
-                                    <rect key="frame" x="8" y="8" width="359" height="34"/>
-                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
-                            <constraints>
-                                <constraint firstItem="IdO-ra-yh8" firstAttribute="top" secondItem="Zvo-YH-8Mz" secondAttribute="top" id="1ur-IF-zkZ"/>
-                                <constraint firstAttribute="bottomMargin" secondItem="UHS-BR-A0g" secondAttribute="bottom" id="A8b-dR-mJT"/>
-                                <constraint firstAttribute="trailingMargin" secondItem="UHS-BR-A0g" secondAttribute="trailing" id="Br2-H1-Iwa"/>
-                                <constraint firstItem="UHS-BR-A0g" firstAttribute="leading" secondItem="Zvo-YH-8Mz" secondAttribute="leadingMargin" id="PBX-gK-87P"/>
-                                <constraint firstItem="IdO-ra-yh8" firstAttribute="leading" secondItem="Zvo-YH-8Mz" secondAttribute="leading" id="PR7-Nb-Dbb"/>
-                                <constraint firstItem="UHS-BR-A0g" firstAttribute="top" secondItem="Zvo-YH-8Mz" secondAttribute="topMargin" id="adL-EZ-qlw"/>
-                                <constraint firstAttribute="bottom" secondItem="IdO-ra-yh8" secondAttribute="bottom" id="pDt-W6-tGS"/>
-                                <constraint firstAttribute="trailing" secondItem="IdO-ra-yh8" secondAttribute="trailing" id="r6W-nF-yLX"/>
-                            </constraints>
-                            <connections>
-                                <outlet property="categoryLabel" destination="UHS-BR-A0g" id="3Ol-wL-nfX"/>
-                            </connections>
-                        </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="mDq-SO-K0w" id="WDJ-Hc-yN1"/>
                             <outlet property="delegate" destination="mDq-SO-K0w" id="6z3-ye-c2K"/>
