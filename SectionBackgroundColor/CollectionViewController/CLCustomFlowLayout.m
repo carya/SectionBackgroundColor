@@ -23,16 +23,16 @@ static const CGFloat kItemDemension = 140;
         self.sectionInset = UIEdgeInsetsMake(13.0f, 13.0f, 13.0f, 13.0f);
         self.minimumLineSpacing = 15.0f;
         self.minimumInteritemSpacing = 15.0f;
-        self.headerReferenceSize = CGSizeMake(self.collectionView.frame.size.width, 44);
+        self.headerReferenceSize = CGSizeMake(90, 44);
     }
     
     return self;
 }
 
-- (void)configInitialLayoutAttributesForAppearingDecoration:(UICollectionViewLayoutAttributes *)layoutAttributes {
-    
-    layoutAttributes.alpha = 0.5;
-//    layoutAttributes.transform3D = CATransform3DMakeTranslation(-CGRectGetWidth(layoutAttributes.frame), 0, 0);
-}
+//- (void)configInitialLayoutAttributesForAppearingDecoration:(UICollectionViewLayoutAttributes *)layoutAttributes {
+//    
+//    layoutAttributes.alpha = 0;
+//    layoutAttributes.transform3D = CATransform3DMakeTranslation(0, -CGRectGetHeight(layoutAttributes.frame), 0);
+//}
 
 @end

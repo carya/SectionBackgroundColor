@@ -39,6 +39,10 @@ static NSString *const kDecorationViewKind = @"CLCollectionSectionBackgroundView
     return [CLSectionColorLayoutAttributes class];
 }
 
+- (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds {
+    return YES;
+}
+
 #pragma mark - override methods
 
 - (NSArray<UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect {
@@ -79,12 +83,14 @@ static NSString *const kDecorationViewKind = @"CLCollectionSectionBackgroundView
         UIEdgeInsets sectionInset = [self sectionInsetAtSection:section];
         //calculate the frame of section background view
         CGRect frame = CGRectUnion(firstItem.frame, lastItem.frame);
-        frame.origin.x -= sectionInset.left;
-        frame.origin.y -= sectionInset.top;
         if (self.scrollDirection == UICollectionViewScrollDirectionHorizontal) {
+            frame.origin.x -= sectionInset.left;
+            frame.origin.y = 0;
             frame.size.width += sectionInset.left + sectionInset.right;
             frame.size.height = self.collectionView.frame.size.height;
         } else {
+            frame.origin.x = 0;
+            frame.origin.y -= sectionInset.top;
             frame.size.width = self.collectionView.frame.size.width;
             frame.size.height += sectionInset.top + sectionInset.bottom;
         }
@@ -119,14 +125,23 @@ static NSString *const kDecorationViewKind = @"CLCollectionSectionBackgroundView
 }
 
 - (UICollectionViewLayoutAttributes *)initialLayoutAttributesForAppearingDecorationElementOfKind:(NSString *)elementKind atIndexPath:(NSIndexPath *)decorationIndexPath {
-    UICollectionViewLayoutAttributes *layoutAttributes;
+    CLSectionColorLayoutAttributes *layoutAttributes;
     if ([elementKind isEqualToString:kDecorationViewKind]) {
         if ([self.insertSectionSet containsObject:@(decorationIndexPath.section)]) {
-            layoutAttributes = [self layoutAttributesForDecorationViewOfKind:kDecorationViewKind atIndexPath:decorationIndexPath];
+            layoutAttributes = (CLSectionColorLayoutAttributes *)[self layoutAttributesForDecorationViewOfKind:kDecorationViewKind atIndexPath:decorationIndexPath];
+            
             if (self.child && [self.child respondsToSelector:@selector(configInitialLayoutAttributesForAppearingDecoration:)]) {
                 [self.child configInitialLayoutAttributesForAppearingDecoration:layoutAttributes];
             } else {
                 layoutAttributes.alpha = 0;
+                CGRect frame = layoutAttributes.frame;
+                if (self.scrollDirection == UICollectionViewScrollDirectionHorizontal) {
+                    frame.size.width = 0;
+                } else {
+                    frame.size.height = 0;
+                }
+                layoutAttributes.frame = frame;
+                layoutAttributes.sectionColor = [UIColor clearColor];
             }
         }
     }
@@ -134,15 +149,23 @@ static NSString *const kDecorationViewKind = @"CLCollectionSectionBackgroundView
 }
 
 - (nullable UICollectionViewLayoutAttributes *)finalLayoutAttributesForDisappearingDecorationElementOfKind:(NSString *)elementKind atIndexPath:(NSIndexPath *)decorationIndexPath {
-    UICollectionViewLayoutAttributes *layoutAttributes;
+    CLSectionColorLayoutAttributes *layoutAttributes;
     if ([elementKind isEqualToString:kDecorationViewKind]) {
         if ([self.deleteSectionSet containsObject:@(decorationIndexPath.section)]) {
-            layoutAttributes = [self layoutAttributesForDecorationViewOfKind:kDecorationViewKind atIndexPath:decorationIndexPath];
+            layoutAttributes = (CLSectionColorLayoutAttributes *)[self layoutAttributesForDecorationViewOfKind:kDecorationViewKind atIndexPath:decorationIndexPath];
+            
             if (self.child && [self.child respondsToSelector:@selector(configFinalLayoutAttributesForDisappearingDecoration:)]) {
                 [self.child configFinalLayoutAttributesForDisappearingDecoration:layoutAttributes];
             } else {
-//                layoutAttributes.alpha = 0;
-//                layoutAttributes.transform3D = CATransform3DMakeTranslation(0, -CGRectGetHeight(layoutAttributes.frame), 0);
+                layoutAttributes.alpha = 0;
+                layoutAttributes.sectionColor = [UIColor clearColor];
+                CGRect frame = layoutAttributes.frame;
+                if (self.scrollDirection == UICollectionViewScrollDirectionHorizontal) {
+                    frame.size.height = CGRectGetHeight(self.collectionView.frame);
+                } else {
+                    frame.size.width = CGRectGetWidth(self.collectionView.frame);
+                }
+                layoutAttributes.frame = frame;
             }
         }
     }

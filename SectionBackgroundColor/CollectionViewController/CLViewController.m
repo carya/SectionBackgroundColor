@@ -97,7 +97,6 @@ static NSString *const kCollectionHeaderViewIdentifier = @"CLCollectionHeaderVie
     }
 }
 
-
 #pragma mark - CLCollectionHeaderViewDelegate
 
 - (void)headerViewDidTouched:(CLCollectionHeaderView *)headerView {
@@ -121,7 +120,6 @@ static NSString *const kCollectionHeaderViewIdentifier = @"CLCollectionHeaderVie
     } completion:^(BOOL finished) {
         
     }];
-    
 }
 
 #pragma mark - private methods
